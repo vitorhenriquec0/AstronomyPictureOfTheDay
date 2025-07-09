@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Libertinus+Math&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #513B56;
+    color: #FFFBDB;
+    text-align: center;
+    font-size: 0.8rem;
+    padding: 1rem;
+    font-family: 'Libertinus Math', sans-serif;
+}
+
+header .title {
+    background-color: #FFFBDB;
+    color: #513B56;
+    padding: 0.4rem;
+    border-radius: 0.8rem;
+}
+
+header p {
+    font-size: 0.9rem;
+}
+
+main {
+    background-color: #b0a8b9;
+    min-height: 100vh;
+    max-height: fit-content;
+    font-family: 'Libertinus Math', sans-serif;
+}
+
+main .apod {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 2rem;
+    text-align: center;
+}
+
+main .apod img {
+    max-width: 100%;
+    height: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 1rem 0;
+}
+
+main .apod h1 {
+    font-size: 2rem;
+    margin: 0.5rem 0;
+}
+
+main .apod p {
+    font-size: 1.1rem;
+    margin: 0 1rem;
+    text-align: justify;
+}
+
+main .apod p #date {
+    font-style: italic;
+    color: #FFFBDB;
+    padding: 0.5rem 0.8rem;
+    background-color: #513B56;
+    border-radius: 2rem;
+    font-size: 0.8rem;
+}
+
+footer {
+    background-color: #513B56;
+    color: #fffbdb85;
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+    font-family: 'Gabarito', sans-serif;
+}
+
+@media screen and (min-width: 930px) {
+
+    header {
+        padding: 1.1rem;
+    }
+
+    header h1 {
+        font-size: 2.5rem;
+    }
+
+    header .title {
+        padding: 0.4rem 0.6rem;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+    main .apod {
+        justify-content: center;
+    }
+
+    main .apod img {
+        max-width: 50%;
+        height: auto;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        margin-right: 2rem;
+    }
+
+    main .apod h1 {
+        font-size: 2.5rem;
+    }
+
+    main .apod p {
+        font-size: 1.2rem;
+        max-width: 600px;
+    }
+
+    .image-text {
+        display: flex;
+        flex-direction: row;
+        margin-top: 2rem;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    footer {
+        font-size: 1.1rem;
+        font-family: 'Gabarito', sans-serif;
+    }
+}

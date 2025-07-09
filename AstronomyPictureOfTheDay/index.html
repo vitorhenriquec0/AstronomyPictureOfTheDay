@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomy Picture of the Day</title>
+
+    <link rel="stylesheet" href="./assets/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+    <header>
+        <h1><span class="title">Astronomy Picture</span> of the Day</h1>
+        <p>Explore the wonders of the universe with daily images and explanations.</p>
+    </header>
+    <main>
+        <section class="apod">
+            <h1 id="title"></h1>
+            <p><span id="date"></span></p>
+            <div class="image-text">
+                <img id="image" src="" alt="Imagem da NASA do dia" />
+                <p id="explanation"></p>
+            </div>
+
+        </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Vitor Henrique</p>
+    </footer>
+
+    <script src="./assets/nasa-api.js"></script>
+</body>
+
+</html>
