@@ -17,16 +17,12 @@ fetch(nasaUrl)
 async function carregarDados() {
     try {
         const resposta = await fetch(nasaUrl);
-        // 1) Transforma o corpo da resposta em JSON
         const dados = await resposta.json();
 
         console.log(dados);
 
-        // 3) Extraia as propriedades de que precisa…
-        // (ajusta os nomes conforme o que a API devolve)
         const { date, explanation, hdurl, title, } = dados;
 
-        // 4) …e jogue no DOM (ou em estado, etc.)
         document.querySelector('#date').textContent = date;
         document.querySelector('#explanation').textContent = explanation;
         document.querySelector('#title').textContent = title;
